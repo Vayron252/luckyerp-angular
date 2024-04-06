@@ -3,13 +3,14 @@ import { ResponseApi } from './../Interfaces/response-api';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Hijo } from '../Interfaces/hijo';
+import { environment } from '../environments/environments';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HijoService {
 
-  private urlAPI:string = 'https://localhost:7278/api/lucky/';
+  private urlAPI:string = `${environment.baseUrl}lucky/`;
 
   constructor(private http:HttpClient) { }
 
