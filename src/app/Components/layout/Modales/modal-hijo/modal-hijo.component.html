@@ -6,14 +6,14 @@
             <mat-grid-tile>
                 <mat-form-field appearance="outline">
                     <mat-label>Apellido Paterno:</mat-label>
-                    <input matInput autocomplete="off" formControlName="apellidoPaterno">
+                    <input matInput autocomplete="off" formControlName="apellidoPaterno" oninput="this.value = this.value.toUpperCase()">
                     <mat-icon matSuffix>acount-box</mat-icon>
                 </mat-form-field>
             </mat-grid-tile>
             <mat-grid-tile>
                 <mat-form-field appearance="outline">
                     <mat-label>Apellido Materno:</mat-label>
-                    <input matInput autocomplete="off" formControlName="apellidoMaterno">
+                    <input matInput autocomplete="off" formControlName="apellidoMaterno" oninput="this.value = this.value.toUpperCase()">
                     <mat-icon matSuffix>acount-box</mat-icon>
                 </mat-form-field>
             </mat-grid-tile>
